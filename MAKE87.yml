@@ -112,8 +112,8 @@ version: 1
 #           required: ["feature_config"]
 build:
   custom:
-    dockerfile: ./build_kit/python.Dockerfile
-    # context: ./python
+    dockerfile: ../build_kit/python.Dockerfile
+    context: ./python
 variants:
   # python:
   #   build:
@@ -123,5 +123,5 @@ variants:
   rust:
     build:
       custom:
-        dockerfile: ./build_kit/rust.Dockerfile
-        # context: ./rust
+        dockerfile: ../build_kit/rust.Dockerfile
+        context: ./rust
