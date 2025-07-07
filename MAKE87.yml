@@ -118,9 +118,9 @@ variants:
     build:
       custom:
         dockerfile: ./build_kit/python.Dockerfile
-        context: ./target-repo/python
+        context: ./python
   rust:
     build:
       custom:
         dockerfile: ./build_kit/rust.Dockerfile
-        context: ./target-repo/rust
+        context: ./rust
