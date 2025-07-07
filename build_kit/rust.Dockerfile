@@ -2,17 +2,17 @@ FROM ghcr.io/make87/rust:1-bookworm AS build-image
 
 RUN apt-get update \
     && apt install --no-install-suggests --no-install-recommends -y \
-        jq \
-        build-essential \
-        cmake \
-        nasm \
+    jq \
+    build-essential \
+    cmake \
+    nasm \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
 COPY Cargo.toml .
-COPY src ./src
+COPY ./src ./src
 
 # Install dependencies for examples
 RUN cargo build --release
