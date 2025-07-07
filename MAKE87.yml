@@ -113,14 +113,15 @@ version: 1
 build:
   build_kit:
     name: python3
+    context: ./python
 variants:
-  python:
-    build:
-      custom:
-        dockerfile: ./build_kit/python.Dockerfile
-        context: ./python
+  # python:
+  #   build:
+  #     build_kit:
+  #       name: python3
+  #       context: ./python
   rust:
     build:
-      custom:
-        dockerfile: ./build_kit/rust.Dockerfile
+      build_kit:
+        name: rust
         context: ./rust
