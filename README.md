@@ -15,7 +15,7 @@ Use this as config json:
     "password": "{{ secrets.USER_PASSWORD }}",
     "retry_count": 5,
     "timeout_seconds": 10.5,
-    "enabled": True,
+    "enabled": true,
     "start_date": "2025-07-07",
     "api_url": "https://api.make87.com/v1/data",
     "ip_whitelist": [
@@ -23,9 +23,9 @@ Use this as config json:
         "10.0.0.2"
     ],
     "features": {
-        "core": True,
-        "advanced": True,
-        "experimental": False
+        "core": true,
+        "advanced": true,
+        "experimental": false
     },
     "mode": "advanced",
     "options": {
@@ -39,14 +39,17 @@ Use this as config json:
     "nested_array": [
         {
             "id": 1,
-            "tags": ["camera", "sensor"]
+            "tags": [
+                "camera",
+                "sensor"
+            ]
         },
         {
             "id": 2,
             "tags": []
         }
     ],
-    "toggle_feature": True,
+    "toggle_feature": true,
     "feature_config": {
         "level": "high"
     }
