@@ -119,13 +119,12 @@ dev_build:
     name: python3
     context: ./python
 variants:
-  python:
-    build:
-      build_kit:
-        name: python3
-        context: ./python
   rust:
     build:
-      custom:
-        dockerfile: rust
+      build_kit:
+        name: rust
+        context: ./rust
+    dev_build:
+      build_kit:
+        name: rust
         context: ./rust
