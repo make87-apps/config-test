@@ -114,6 +114,10 @@ build:
   build_kit:
     name: python3
     context: ./python
+dev_build:
+  build_kit:
+    name: python3
+    context: ./python
 variants:
   python:
     build:
