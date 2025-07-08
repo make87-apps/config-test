@@ -1,5 +1,12 @@
 # Config Test
 
+Add secrets to the system:
+
+```
+USER_PASSWORD : s3cr3t!
+CLIENT_SECRET : abcd1234xyz
+```
+
 Use this as config json:
 
 ```
