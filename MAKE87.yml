@@ -111,14 +111,19 @@ config:
         not:
           required: ["feature_config"]
 build:
-  build_kit:
-    name: python3
-    context: ./python
-dev_build:
-  build_kit:
-    name: python3
-    context: ./python
+  custom:
+    dockerfile: ../build_kit/bash.Dockerfile
+    context: ./bash
 variants:
+  python:
+    build:
+      build_kit:
+        name: python3
+        context: ./python
+    dev_build:
+      build_kit:
+        name: python3
+        context: ./python
   rust:
     build:
       build_kit:
