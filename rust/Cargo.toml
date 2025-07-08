@@ -4,3 +4,5 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+make87 = "0.1.0-dev6"
+serde_json = "*"
