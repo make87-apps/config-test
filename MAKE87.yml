@@ -110,6 +110,10 @@ config:
       else:
         not:
           required: ["feature_config"]
+build:
+  build_kit:
+    name: python3
+    context: ./python
 variants:
   python:
     build:
