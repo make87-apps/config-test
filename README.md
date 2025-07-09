@@ -12,7 +12,7 @@ Use this as config json:
 ```
 {
     "username": "make87_user",
-    "password": "{{ secrets.USER_PASSWORD }}",
+    "password": "{{ secret.USER_PASSWORD }}",
     "retry_count": 5,
     "timeout_seconds": 10.5,
     "enabled": true,
@@ -34,7 +34,7 @@ Use this as config json:
     },
     "credentials": {
         "client_id": "my-client-id",
-        "client_secret": "{{ secrets.CLIENT_SECRET }}"
+        "client_secret": "{{ secret.CLIENT_SECRET }}"
     },
     "nested_array": [
         {
